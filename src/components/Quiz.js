@@ -16,7 +16,7 @@ const Quiz = () => {
                 <div className='congratulations'>Congratulations</div>
                 <div className='results-info'>
                     <div>You have complete the quiz</div>
-                    <div>You'v got 4 of 8</div>
+                    <div>You'v got {quizState.correctAnswersCount} of {quizState.questions.length}</div>
                     <div 
                     className='next-button'
                     onClick={ () => dispatch({type: 'RESTART'})}
